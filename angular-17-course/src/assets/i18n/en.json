@@ -1,0 +1,25 @@
+{
+    "addTodo": "Add todo",
+    "deadline": "Deadline",
+    "status": "Status",
+    "sprint": "Sprint",
+    "difficult": "difficult",
+    "incrementCounter": "increment counter",
+    "lang": {
+        "en": "English",
+        "es": "Spanish",
+        "fran": "French"
+    },
+    "todo": {
+        "difficult": {
+            "high": "High",
+            "medium": "Medium",
+            "low": "Low"
+        },
+        "range": {
+            "high": "High",
+            "medium": "Medium",
+            "low": "Low"
+        }
+    }
+}

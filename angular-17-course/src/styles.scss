@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+
+// .red-shadow {
+//     box-shadow: 0 0 2.5rem 0 rgb(97, 42, 76);
+//     border-radius: 1rem;
+// }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #d195e9;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  button {
+    background-color: #f3abef;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #ffa9f1;
+  }
+  
+  .container {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(235, 178, 178, 0.76);
+  }
+  
+  h1 {
+    color: #c59797;
+  }
+  
+  h2 {
+    color: #f7b6de;
+  }
+  
+  .section2{
+    text-align: left;
+    color: #ffffff !important;
+  }

@@ -1,0 +1,71 @@
+<div class="pageInitial">
+        <app-header [counter]="counterService.getCounter"></app-header>
+            <div style="display: flex; justify-content:right; align-items: center;">
+                <h3 style="margin-right: 10px; color: mediumorchid; text-align: right;">BUSCADOR</h3>
+                <img src="src/imagen.png" alt="icono de buscador" style="width: 24px; height: 24px; position: right;">
+                <div style="margin: 1rem; ">
+                    <input style="border-color: blueviolet; text-align: right;" type="text" [(ngModel)]="searchText">
+                </div>
+                <button (click)="addTodo()" style="background-color: rgb(209, 163, 253);">{{'addTodo' | translate }}</button>
+                <!-- <button (click)="onPrefetch = true">Cargar recursos</button> -->
+                <!-- <form action="getform.php" method="get">
+                        <label>Titulo: <input type="text" /></label><br />
+                        <label>Descripción: <input type="text" /></label><br />
+                        <label>Dificultad:<input type="number"></label><br />
+                        <label>Estado:<input type="text"></label><br />
+                        <label>Progreso: <input type="number"></label>
+                    <input type="submit" value="Submit" />
+                    </form> -->
+
+                    <!-- <dialog open>
+                        <p>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="#888888" d="M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8
+                              8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10
+                              10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2v6Z" />
+                          </svg>
+                          Esto es un ejemplo de mensaje de diálogo.
+                        </p>
+                        <button>Aceptar</button>
+                      </dialog> -->
+
+            </div>
+
+
+
+
+        <!-- <section></section> -->
+
+        <!-- <button (click)="onButtonCliked = true" style="background-color: rgb(209, 163, 253);">Cargar contenido</button> -->
+        <!-- <button (click)="addTodo()" style="background-color: rgb(209, 163, 253);">{{'addTodo' | translate }}</button> -->
+
+        <!-- <button (click)="onPrefetch = true" style="background-color: rgb(209, 163, 253);">Cargar recursos</button> -->
+         @defer (when onButtonCliked; prefetch when onPrefetch) {
+            <div class="todo-container"> 
+                @for (item of todos | filter: searchText; track $index) {
+                    <app-todo
+                        [appHighlighted]="false"
+                        [todo]="item"
+                        
+                        (onClickIcon)="deleteTodo($event)"
+                    >
+                    
+                    <textarea rows="5" (blur)="updateTodo($event, item)">{{item.description}}</textarea>
+                    </app-todo>
+                }
+            </div>
+        }
+
+</div> 
+
+
+<!-- @placeholder {
+    <h2>Contenido de respaldo</h2>
+}
+
+@error {
+    Ha ocurrido un error
+} --> 
+
+
+  

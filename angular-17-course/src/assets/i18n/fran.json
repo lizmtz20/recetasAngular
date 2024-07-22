@@ -1,0 +1,25 @@
+{
+    "addTodo": "Ajouter une tâche",
+    "deadline": "Date limite",
+    "status": "Statut",
+    "sprint": "Sprint",
+    "difficult": "difficile",
+    "incrementCounter": "augmenter le compteur",
+    "lang": {
+        "en": "Anglais",
+        "es": "Espagnol",
+        "fran": "Français"
+    },
+    "todo": {
+        "difficult": {
+            "high": "Élevé",
+            "medium": "Moyen",
+            "low": "Faible"
+        },
+        "range": {
+            "high": "Élevé",
+            "medium": "Moyen",
+            "low": "Faible"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "addTodo": "Agregar Receta",
+    "editarReceta": "Editar Receta",
+    "deadline": "Fecha límite",
+    "status": "Estado",
+    "sprint": "Sprint",
+    "difficult": "Dificultad",
+    "incrementCounter": "incrementar contador",
+    "lang": {
+        "en": "Inglés",
+        "es": "Español",
+        "fran": "Francés"
+    },
+    "todo": {
+        "difficult": {
+            "high": "Alta",
+            "medium": "Media",
+            "low": "Baja"
+        },
+        "range": {
+            "high": "Alta",
+            "medium": "Media",
+            "low": "Baja"
+        }
+    }
+}

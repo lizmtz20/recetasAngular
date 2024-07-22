@@ -1,0 +1,58 @@
+<div class="card-container">
+    <header>
+        <button class="icon-close" (click)="onClickIcon.emit(todoData())">x</button>
+    </header>
+    <div class="card-body">
+        <div class="card-content">
+            <h3 style="text-align: center;"> {{todoData().title}}</h3>
+            <p style="justify-content: center;">{{todoData().description}}</p>
+        </div>
+    </div>
+     <!-- <section style="background-color: rgb(255, 255, 255);">
+        <ng-content></ng-content>
+    </section>  
+    <div>
+        {{'sprint' | translate }} {{sprint}}
+    </div> -->
+    <div class="card-content pills-container">
+        <p>{{'status' | translate}}:
+            <span
+                class="status to-do"
+                [ngClass]="todoData().class.status"
+            >
+                {{todoData().status}}
+            </span>
+        </p>
+        <p>{{'difficult' | translate}}:
+            <span
+                class="difficult"
+                [ngClass]="todoData().class.difficult"
+            >
+            {{todoData().difficult | difficult}}
+            </span>
+        </p>
+        <p>{{'deadline' | translate}}: {{todoData().deadLine | date: 'YYYY/MM/dd'}}</p>
+    </div>
+    <section class="progressbar-container">
+        <div class="progressbar" [attr.data-progress-range]="todoData().progress * 100 | range ">
+            <div class="progressbar__fill" [ngStyle]="{'width': todoData().progress * 100 + '%'}">
+            </div>
+        </div>
+        <span>{{todoData().progress| percent }}</span> 
+    </section>
+
+    <div class="sectionEditar">
+        <section>
+            <button class="icon-editar" style="background-color: rgb(209,163,253);" (click)="onClickIcon.emit(todoData())">Editar</button>
+                <!-- <form method="put">
+                    <!-- action="getform.php"  
+                    <label>Titulo: <input type="text" /></label><br />
+                    <label>Descripción: <input type="text" /></label><br />
+                    <label>Dificultad:<input type="number"></label><br />
+                    <label>Estado:<input type="text"></label><br />
+                    <label>Progreso: <input type="number"></label>
+                    <input type="submit" value="Submit" />
+                </form>  -->
+        </section>
+    </div>
+</div>

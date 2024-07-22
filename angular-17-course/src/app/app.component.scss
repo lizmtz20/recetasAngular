@@ -1,0 +1,69 @@
+.todo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.1rem;
+    
+}
+
+// // .pageInitial{
+// //     position: relative;
+// //     display: flex;
+// //     width: 400px;
+// //     height: 300px;
+// }
+
+// .pageSecond{
+//     position: absolute;
+//     display: flex;
+//     width: 100px;
+//     height: 100px;
+// }
+
+// section {
+//     height: 1rem;
+//     background: rgb(255, 255, 255);
+// }
+
+// svg {
+//     vertical-align: bottom;
+//   }
+
+
+.pageInitial {
+    /* Estilos generales para la página */
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  
+  .search-container h3 {
+    margin-right: 10px;
+    color: mediumorchid;
+  }
+  
+  .search-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .search-input-container {
+    margin: 1rem;
+  }
+  
+  .search-input {
+    border-color: blueviolet;
+    text-align: right;
+  }
+  
+  .add-todo-button {
+    background-color: rgb(209, 163, 253);
+  }
+  
+  .todo-container {
+    /* Estilos para el contenedor de TODOs */
+  }
+  
+  
